@@ -1,0 +1,14 @@
+html, body {width:100%; margin:0;}
+
+#content{width:100%;
+        height:607px;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+}
+
+
+
+
+@media (max-width:800px){
+
+}
