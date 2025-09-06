@@ -16,10 +16,17 @@ html, body {width:100%; margin:0;}
               background-image:url('kitchen.jpg');
               background-size:100% 100%;
 
-              position:absolute;
-              z-index:2;
-              left:300px;
-              top:80px;
+              position:absolute; z-index:2;
+              left:300px; top:80px;
+              border-radius:20px;
+}
+
+#checkout-form{width:400px; height:450px;
+               background-color:#FAF6E9;
+
+               position:absolute; z-index:3;
+               left:700px; top:80px;
+               border-radius:0 20px 20px 0;
 }
 
 @media (max-width:600px){
@@ -36,4 +43,5 @@ html, body {width:100%; margin:0;}
         #content{height:615px;}
 
 }
+
 
