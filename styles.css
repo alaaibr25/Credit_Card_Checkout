@@ -1,14 +1,37 @@
 html, body {width:100%; margin:0;}
 
+#wrapper{position: relative;}
+
 #content{width:100%;
         height:607px;
         background-repeat: no-repeat;
         background-size:100% 100%;
+        position: absolute;
+        z-index:1;
+        filter: blur(3px); 
 }
 
 
+#content-card{width:800px; height: 450px;
+              background-image:url('kitchen.jpg');
+              background-size:100% 100%;
 
+              position:absolute;
+              z-index:2;
+              left:300px;
+              top:80px;
+}
+
+@media (max-width:600px){
+        #content-card{position:absolute;
+                     left:70px; top:60px;
+                     width:50%;}
+
+}
 
 @media (max-width:800px){
+        #content-card{position:absolute;
+                     left:180px;
+                     width:50%;}
 
 }
