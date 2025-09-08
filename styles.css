@@ -55,15 +55,16 @@ tfoot td {border-top: 2px solid;}
 
 
 
-input{background-color:transparent;
+input, select{background-color:transparent;
       padding:5px 20px 5px 5px;
       margin:5px;
       border: solid gray;
       border-radius:5px;
+      color:#37353E;        
 }
 
 input.mini {padding:5px 0; width:100px;}
-
+select{padding:5px 0;}
 label{font-size:14px; margin:50px 5px;}
 
 h3.pay-info{margin-bottom:5px;
@@ -120,3 +121,4 @@ button:hover{border-width: 5px; font-weight:400;}
 }
 
 /*/ ===================================================== /*/
+
