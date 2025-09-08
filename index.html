@@ -7,11 +7,48 @@
     <title>Title</title>
 </head>
 <body>
-<div id="content" style="background-image:url('kitchen.jpg');">
+<div id="wrapper">
+    <div id="content" style="background-image:url('kitchen.jpg');"></div>
+
+    <div id="content-card"></div>
+
+    <div id="checkout-form">
+        <div id="form-top">
+                <h2>Receipt summary</h2>
+                <table>
+                    <tr>
+                        <td>Product(1)</td>
+                        <td class="price"> EGP20,480 </td>
+
+                    </tr>
+
+                    <tfoot>
+                    <tr class="subtotal-price">
+                        <td>Subtotal incl. VAT</td>
+                        <td class="price" ><i>EGP</i>   20,480 </td>
+
+                    </tr>
+                    </tfoot>
+                </table>
+        </div>
+
+        <div id="form-bottom">
+            <h3 class="pay-info" style="color:gray;">Payment information</h3>
+            <form>
+                <input placeholder="Name on credit card"><br>
+                <label>Credit card Number</label><br>
+                <input type="password" placeholder="0000 0000 0000 0000"><br>
+                <label>Expires on </label><br>
+                <input type="month" class="mini"> <input type="date" class="mini"> <br>
+                <input type="password" placeholder="CVC" class="mini"> <a href="#">What is CVC?</a>
+                <br>
+                <button>Book Securely</button>
+            </form>
+            <p>Your credit card information is encrypted</p>
+        </div>
+    </div>
 
 </div>
-
-
 
 
 
