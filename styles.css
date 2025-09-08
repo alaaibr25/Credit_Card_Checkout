@@ -1,4 +1,8 @@
-html, body {width:100%; margin:0;}
+html, body {width:100%; height: 100%; margin:0;
+            font-family: sans-serif;
+            color:#37353E;
+}
+/*/ ===================================================== /*/
 
 #wrapper{position: relative;}
 
@@ -6,50 +10,113 @@ html, body {width:100%; margin:0;}
         height:607px;
         background-repeat: no-repeat;
         background-size:100% 100%;
+
         position: absolute;
         z-index:1;
-        filter: blur(3px); 
+        filter: blur(3px);
 }
 
-
-#content-card{width:800px; height: 450px;
+#content-card{width:800px; height: 500px;
               background-image:url('kitchen.jpg');
               background-size:100% 100%;
 
               position:absolute; z-index:2;
-              left:300px; top:80px;
-              border-radius:20px;
-}
+              left:300px; top:60px;
 
-#checkout-form{width:400px; height:450px;
+              border-radius:20px;}
+
+#checkout-form{width:400px; height:500px;
                background-color:#FAF6E9;
 
                position:absolute; z-index:3;
-               left:700px; top:80px;
-               border-radius:0 20px 20px 0;
+               left:700px; top:60px;
+               border-radius:0 20px 20px 0;}
+
+/*/ ===================================================== /*/
+
+#form-top{text-align:left;
+          padding-left:20px;
+          position:relative;
+          }
+table{position:relative; bottom:9px;}
+
+td{padding:10px;}
+.subtotal-price{font-weight:900;}
+
+tfoot td {border-top: 2px solid;}
+
+.price{padding-left: 85px;}
+.price i{font-size:11px;}
+/*/ ===================================================== /*/
+#form-bottom{padding-left:20px;
+                position:relative;
+                bottom:20px;
 }
 
-@media (max-width:600px){
+
+
+input{background-color:transparent;
+      padding:5px 20px 5px 5px;
+      margin:5px;
+      border: solid gray;
+      border-radius:5px;
+}
+
+input.mini {padding:5px 0; width:100px;}
+
+label{font-size:14px; margin:50px 5px;}
+
+h3.pay-info{margin-bottom:5px;
+            padding-left:5px;
+}
+
+p, a{font-size:13px; color:gray; padding:5px;}
+a{text-decoration-line:none;}
+a:hover{text-decoration-line:underline;}
+
+button{border-radius:5px;
+       border:10px solid gray;
+       background-color:gray;
+       color:white;
+       margin:10px 5px 0 5px;
+       padding:0 40px;
+       text-align:center;
+       font-size:14px;
+       font-weight:600;
+
+}
+button:hover{border-width: 5px; font-weight:400;}
+
+/*/ ===================================================== /*/
+@media screen and (max-width:600px){
         #content-card{position:absolute;
-                     left:10px; top:100px;
-                     width:100%;}
+                     left:10px; top:60px;
+                     width:50%;}
+
         #checkout-form{position:absolute;
-                        left:0; width:50%;}
+                        left:0px; top:600px;
+                         width:50%;}
 
 }
 
-@media (max-width:800px){
+/*/ ===================================================== /*/
+
+@media screen and (max-width:800px){
         #content-card{position:absolute;
-                     left:0px;
-                     width:100%;}
+                     left:0px; top: 100px;
+                     width:100%; height:400px;}
+
         #content{height:615px;}
-
         #checkout-form{position:absolute;
-                        left:150px; top:120px;
-                        height:380px;
+                        left:150px; top:60px;
+                        height:470px;
                         border-radius:5px;}
 
+        h2{font-size:1em;}
+        td{padding:5px; font-size:16px;}
+        .subtotal-price{font-size:15px; }
+        p, a{font-size:11px; }
+
 }
 
-
-
+/*/ ===================================================== /*/
