@@ -113,8 +113,9 @@ button:hover{border-width: 5px; font-weight:400;}
 @media  (max-width:300px){
         #checkout-form{position:absolute;
                         left:0px; top:0px;
-                        width:100%;}
+                        width:100%;}}
 /*/ ===================================================== /*/
+
 
 
 
